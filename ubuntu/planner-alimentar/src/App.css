@@ -1,0 +1,257 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  color: #0f172a;
+}
+
+.app-shell {
+  position: relative;
+  min-height: 100vh;
+  padding: 2.2rem 1rem 1.5rem;
+  background: radial-gradient(circle at 15% 10%, #e0ecff 0%, transparent 42%),
+    radial-gradient(circle at 80% 2%, #efe9ff 0%, transparent 35%),
+    #f8fafc;
+  overflow: hidden;
+}
+
+.bg-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(70px);
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.orb-one {
+  width: 230px;
+  height: 230px;
+  background: #b8dbff;
+  top: -40px;
+  left: -45px;
+}
+
+.orb-two {
+  width: 280px;
+  height: 280px;
+  background: #dac7ff;
+  right: -100px;
+  top: 120px;
+}
+
+.hero-block,
+.glass-panel,
+.footer-note {
+  position: relative;
+  z-index: 1;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.hero-block {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  padding: 0.35rem 0.7rem;
+  font-size: 0.8rem;
+  color: #334155;
+}
+
+.hero-block h1 {
+  margin: 0.85rem 0 0.45rem;
+  font-size: clamp(1.8rem, 3.7vw, 2.7rem);
+  letter-spacing: -0.03em;
+}
+
+.hero-block p {
+  margin: 0;
+  color: #475569;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.73);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 26px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 25px 65px rgba(15, 23, 42, 0.09);
+  padding: clamp(1.1rem, 3vw, 2rem);
+}
+
+.form-stage {
+  background: linear-gradient(155deg, rgba(255, 255, 255, 0.9), rgba(248, 250, 252, 0.78));
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 22px;
+  padding: 1.1rem;
+}
+
+.step-header {
+  margin-bottom: 1rem;
+}
+
+.step-counter {
+  margin: 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #64748b;
+}
+
+.step-header h2 {
+  margin: 0.2rem 0;
+  font-size: 1.55rem;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+}
+
+.step-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.93rem;
+}
+
+.option-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.26);
+  background: rgba(255, 255, 255, 0.86);
+  padding: 0.65rem 0.8rem;
+}
+
+.progress-track {
+  width: 100%;
+  height: 7px;
+  border-radius: 9999px;
+  background: rgba(148, 163, 184, 0.25);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #0ea5e9, #6366f1);
+  transition: width 0.35s ease;
+}
+
+.actions-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-ghost {
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(100deg, #0f172a, #334155);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  opacity: 0.96;
+}
+
+.btn-secondary {
+  background: rgba(15, 23, 42, 0.06);
+  color: #0f172a;
+}
+
+.btn-secondary:hover {
+  background: rgba(15, 23, 42, 0.1);
+}
+
+.btn-ghost {
+  background: rgba(100, 116, 139, 0.13);
+  color: #0f172a;
+}
+
+.btn-ghost:hover {
+  background: rgba(100, 116, 139, 0.23);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.75rem;
+}
+
+.stat-card {
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: rgba(255, 255, 255, 0.78);
+  border-radius: 16px;
+  padding: 0.8rem;
+}
+
+.stat-label {
+  margin: 0.4rem 0 0.15rem;
+  color: #64748b;
+  font-size: 0.82rem;
+}
+
+.stat-value {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #111827;
+  font-weight: 600;
+}
+
+.day-block h3 {
+  margin: 0 0 0.65rem;
+  color: #0f172a;
+  font-size: 1.1rem;
+}
+
+.meal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+
+.meal-card {
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: linear-gradient(155deg, rgba(255, 255, 255, 0.95), rgba(241, 245, 249, 0.7));
+}
+
+.footer-note {
+  margin-top: 1.1rem;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    padding-top: 1.4rem;
+  }
+
+  .glass-panel {
+    border-radius: 20px;
+  }
+
+  .actions-row {
+    flex-direction: column;
+  }
+
+  .actions-row button {
+    width: 100%;
+  }
+}
